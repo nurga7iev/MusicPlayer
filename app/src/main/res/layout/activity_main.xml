@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Кнопка "Назад" -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        android:layout_margin="6dp" />
+
+    <!-- Кнопка "Воспроизвести" -->
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_icon"
+        android:layout_toEndOf="@id/backButton"
+        android:layout_margin="6dp" />
+
+    <!-- Кнопка "Пауза" -->
+    <ImageView
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pause_icon"
+        android:layout_toEndOf="@id/playButton"
+        android:layout_margin="6dp" />
+
+    <!-- Кнопка "Следующий трек" -->
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next_icon"
+        android:layout_toEndOf="@id/pauseButton"
+        android:layout_margin="6dp" />
+
+    <!-- Кнопка "Просмотреть изображения" -->
+    <ImageView
+        android:id="@+id/showImagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/view_images_icon"
+        android:layout_below="@id/playButton"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Контейнер для фрагмента -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/showImagesButton" />
+
+</RelativeLayout>
